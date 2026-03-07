@@ -1,5 +1,7 @@
 import Navbar from "./NavBar";
 import Hero from "./Hero";
+import Designs from "./designs";
+import Ideas from './Ideas';
 
 function App() {
   
@@ -8,6 +10,8 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Designs />
+      <Ideas />
     </>
   );
 }
