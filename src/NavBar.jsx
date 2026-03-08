@@ -31,7 +31,6 @@ function Navbar() {
       <nav>
         <ul style={inlineStyleList}>
           <img src={Logo} alt="" style={logoStyle} />
-      <img src="" alt="" />
           <li>
             <a href="/">About</a>
           </li>

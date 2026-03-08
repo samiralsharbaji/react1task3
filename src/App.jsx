@@ -1,7 +1,11 @@
 import Navbar from "./NavBar";
 import Hero from "./Hero";
 import Designs from "./designs";
-import Ideas from './Ideas';
+import Idea from "./Idea";
+import Build from "./Build";
+import Plans from "./Plans"
+import Testimonial from "./Testimonial"
+
 
 function App() {
   
@@ -11,7 +15,10 @@ function App() {
       <Navbar />
       <Hero />
       <Designs />
-      <Ideas />
+      <Idea />
+      <Build />
+      <Plans />
+      <Testimonial />
     </>
   );
 }

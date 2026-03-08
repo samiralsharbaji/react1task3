@@ -40,7 +40,7 @@ const imgTh ={
     height:'200px',
 }
 
-function Ideas() {
+function Idea() {
   return (
     <div>
       <p style={Title}>Turn your ideas into reality in seconds</p>
@@ -80,4 +80,4 @@ function Ideas() {
   );
 }
 
-export default Ideas;
+export default Idea;
