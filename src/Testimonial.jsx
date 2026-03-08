@@ -49,7 +49,7 @@ function Testimonial() {
         </div>
 
         <div style={centerlizing}>
-          `` <img src={testimonial01} alt="" style={imgtestimonial} />
+          `` <img src={testimonial02} alt="" style={imgtestimonial} />
           <p style={grayStyle}>
             “ This is a great app and the value is amazing. Since I purchased it
             I have been using it everyday! Highly recommend it. “
@@ -59,7 +59,7 @@ function Testimonial() {
         </div>
 
         <div style={centerlizing}>
-          <img src={testimonial02} alt="" style={imgtestimonial} />
+          <img src={testimonial03} alt="" style={imgtestimonial} />
           <p style={grayStyle}>
             “ This is a great app and the value is amazing. Since I purchased it
             I have been using it everyday! Highly recommend it. “
