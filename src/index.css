@@ -1,4 +1,9 @@
+*{
+    scrollbar-width: none;
+}
 body{
+    
     background-color: #202026;
+    margin: 50px 50px;
     
 }
