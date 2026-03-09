@@ -1,61 +1,57 @@
 import hero from "./assets/hero.jpg";
-import mobile from './assets/iPhoneMockup.png';
+import mobile from "./assets/iPhoneMockup.png";
 
-const mainContainer={
-    margin: "0px 135px",
-
-}
+const mainContainer = {
+  margin: "0px 135px",
+};
 const mainGrid = {
   display: "grid",
   gridTemplateColumns: "700px 500px",
   gridTemplateRows: "1fr",
-  columnGap: '200px', 
+  columnGap: "200px",
 };
 const megaTitle = {
-  fontSize: '6rem',
-  color: '#ffffff',
-  letterSpacing:'1px',
+  fontSize: "6rem",
+  color: "#ffffff",
+  letterSpacing: "1px",
 };
 const subMegaTitle = {
-  color: '#a2a2a7',
-  fontSize: '1.5rem',
-  letterSpacing:'1px',
+  color: "#a2a2a7",
+  fontSize: "1.5rem",
+  letterSpacing: "1px",
 };
 const inputCode = {
   background: "#2E2E33",
   margin: "0px 8px 0px 0px",
   padding: "12px 16px",
-  width:'250px',
-  letterSpacing:'1px',
+  width: "250px",
+  letterSpacing: "1px",
 };
 const btnCode = {
   color: "#ffffff",
   font: "1rem inter,sans-serif",
   background: "#3ABAB4",
   padding: "12px 32px",
-  textDecoration: 'none',
-  letterSpacing:'1px',
+  textDecoration: "none",
+  letterSpacing: "1px",
 };
-const heroIMG = {
-  width:'290px',
-  height:'524px',
-}
-const points={
-  color:'#a2a2a7',
-  fontSize:'1.5em',
-}
+
+const points = {
+  color: "#a2a2a7",
+  fontSize: "1.5em",
+};
 const daysStyle = {
-  textAlign:'center',
-  background:'#a2a2a734',
-  margin:'25px',
-  width:'500px',
-  height:'177px',
-}
+  textAlign: "center",
+  background: "#a2a2a734",
+  margin: "25px",
+  width: "500px",
+  height: "177px",
+};
 
 const graycardTitle = {
   color: "#ffffff",
   fontSize: "2rem",
-  fontWeight:'bolder',
+  fontWeight: "bolder",
 };
 const grayCardSubTitle = {
   fontSize: "1.5rem",
@@ -66,28 +62,54 @@ const cards = {
   justifyContent: "space-around",
   alignItems: "center",
 };
+
+const imageContainer = {
+  position: "relative",
+  width: "fit-content",
+};
+
+const bottomImage = {
+  display: "block",
+  width: "350px",
+  height: "fit-content",
+};
+
+const topImage = {
+  width: "290px",
+  height: "fit-content",
+  position: "absolute",
+  zIndex: "2",
+  top: "29px",
+  left: "30px",
+  borderRadius:'10px',
+};
+
 function Hero() {
   return (
     <div style={mainContainer}>
-    <div style={mainGrid}>
-      <div>
-        <h1 style={megaTitle}>Your website, reimagined</h1>
-        <p style={subMegaTitle}>
-          Our landing page template works on all devices, so you only have to
-          set it up once, and get beautiful results forever.
-        </p>
+      <div style={mainGrid}>
         <div>
-          <input type="text" placeholder="Phone number" style={inputCode} />
-          <a href="#" style={btnCode}>Request Code</a>
+          <h1 style={megaTitle}>Your website, reimagined</h1>
+          <p style={subMegaTitle}>
+            Our landing page template works on all devices, so you only have to
+            set it up once, and get beautiful results forever.
+          </p>
+          <div>
+            <input type="text" placeholder="Phone number" style={inputCode} />
+            <a href="#" style={btnCode}>
+              Request Code
+            </a>
+          </div>
         </div>
-      </div>
-      <img src={hero} alt="" style={heroIMG}/>
-      
-      <div>
-        <p style={points}>✅ Lorem ipsum is placeholder text commonly.</p>
-        <p style={points}>✅ Excepteur sint occaecat cupidatat.</p>
-        <p style={points}>✅ Lorem ipsum is placeholder text commonly.</p>
-      </div>
+        <div style={imageContainer}>
+          <img src={hero} alt="" style={topImage} />
+          <img src={mobile} alt="" style={bottomImage} />
+        </div>
+        <div>
+          <p style={points}>✅ Lorem ipsum is placeholder text commonly.</p>
+          <p style={points}>✅ Excepteur sint occaecat cupidatat.</p>
+          <p style={points}>✅ Lorem ipsum is placeholder text commonly.</p>
+        </div>
       </div>
       <br />
       <div style={cards}>
@@ -111,7 +133,6 @@ function Hero() {
       </div>
       <br />
       <hr />
-    
     </div>
   );
 }
